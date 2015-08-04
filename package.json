@@ -1,0 +1,32 @@
+{
+  "name": "angular-poc",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run server-hot",
+    "server-hot": "webpack-dev-server --config webpack.config.hot.js --hot --progress --colors --port 2992 --inline",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-nvd3": "^1.0.0-beta",
+    "babel": "^5.6.23",
+    "babel-core": "^5.7.4",
+    "babel-loader": "^5.3.2",
+    "babel-runtime": "^5.7.0",
+    "clean-webpack-plugin": "^0.1.2",
+    "color": "^0.10.1",
+    "config": "^1.12.0",
+    "css-loader": "^0.9.0",
+    "d3": "^3.5.6",
+    "file-loader": "^0.8.1",
+    "lodash": "^3.10.0",
+    "webpack": "^1.8.11"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.17",
+    "eslint": "^0.22.1",
+    "webpack-dev-server": "^1.8.2"
+  }
+}

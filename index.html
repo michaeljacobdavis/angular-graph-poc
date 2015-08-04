@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <style type="text/css">
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  </style>
+</head>
+<body>
+  <div class="app" ng-app="folio">
+    <div ng-controller="GraphController">
+      <line-chart chart-data="data" width="width" height="height"></line-chart>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://127.0.0.1:2992/js/bundle.dev.js"></script>
+</body>
+</html>
